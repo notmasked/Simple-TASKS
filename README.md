@@ -31,7 +31,7 @@ Simple-TASKS/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/python-task-manager.git
+git clone https://github.com/notmasked/Simple-TASKS.git
 ```
 
 2. Navigate to the project directory:
