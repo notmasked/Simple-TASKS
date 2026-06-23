@@ -1,9 +1,9 @@
 
 def loadtasks():
     global tasks, ctasks
-    with open("Simple TASKS/tasks/tasks.txt") as f:
+    with open("Tasks/tasks.txt") as f:
         tasks = f.read()
-    with open("Simple TASKS/tasks/completedtasks.txt") as f:
+    with open("Tasks/completedtasks.txt") as f:
         ctasks = f.read()
 
 def mainmenu():
@@ -51,13 +51,13 @@ def completetasks():
     print("■■■■■■■■■■■■■■■■■■■■■■■■■")
     ans = input("Enter the task you completed: ")
     if ans in tasks.splitlines():
-        with open("Simple TASKS/tasks/tasks.txt") as f:
+        with open("Tasks/tasks.txt") as f:
             lines = f.readlines()
-        with open("Simple TASKS/tasks/tasks.txt", "w") as f:
+        with open("Tasks/tasks.txt", "w") as f:
             for line in lines:
                 if line.strip() != ans:
                     f.write(line)
-        with open("Simple TASKS/tasks/completedtasks.txt", "a") as f:
+        with open("Tasks/completedtasks.txt", "a") as f:
             f.write('\n' + ans)
         loadtasks()
         print("■■■■■■■■■■■■■■■■■■■■■■■■■")
@@ -83,7 +83,7 @@ def completetasks():
 def addtasks():
     print("■■■■■■■■■■■■■■■■■■■■■■■■■")
     newtask = input("Enter new task: ")
-    with open("Simple TASKS/tasks/tasks.txt", "a") as f:
+    with open("Tasks/tasks.txt", "a") as f:
         f.write(newtask + '\n')
     loadtasks()
     print(f"{newtask} has been successfully added to your Tasks.")
@@ -108,9 +108,9 @@ def removetasks():
     print("■■■■■■■■■■■■■■■■■■■■■■■■■")
     ans = input("Enter a task you want to remove: ")
     if ans in tasks.splitlines():
-        with open("Simple TASKS/tasks/tasks.txt") as f:
+        with open("Tasks/tasks.txt") as f:
             lines = f.readlines()
-        with open("Simple TASKS/tasks/tasks.txt", "w") as f:
+        with open("Tasks/tasks.txt", "w") as f:
             for line in lines:
                 if line.strip() != ans:
                     f.write(line)
