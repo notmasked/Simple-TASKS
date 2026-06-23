@@ -14,15 +14,17 @@ A Simple TASK manager written in Python. This project allows users to create, vi
 
 ## Project Structure
 
-```
+```text
 Simple-TASKS/
 │
 ├── main.py
-├── Task/
-│   ├── tasks.txt
-│   └── completedtasks.txt
-└── README.md
+├── README.md
+├── LICENSE
+└── Tasks/
+    ├── tasks.txt
+    └── completedtasks.txt
 ```
+
 
 ## How to Run
 
