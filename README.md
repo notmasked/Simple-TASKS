@@ -37,7 +37,7 @@ git clone https://github.com/notmasked/Simple-TASKS.git
 2. Navigate to the project directory:
 
 ```bash
-cd python-task-manager
+cd Simple-TASKS
 ```
 
 3. Run the program:
@@ -49,7 +49,7 @@ python main.py
 ## Example
 
 ```
-■-- Welcome to TASKS! --■
+■-- Welcome to Simple TASKS! --■
 
 1. View Tasks
 2. Complete Tasks
