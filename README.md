@@ -58,23 +58,6 @@ python main.py
 5. Exit
 ```
 
-## Technologies Used
-
-* Python 3
-* File Handling
-* Functions
-* String Manipulation
-
-## Future plans for updates
-
-* Input validation with try/except
-* Replace recursive menus with loops
-* Prevent duplicate tasks
-* Task priorities
-* Due dates
-* JSON-based storage
-* GUI version using Tkinter
-
 ## Author
 
 Harshad Sawant
